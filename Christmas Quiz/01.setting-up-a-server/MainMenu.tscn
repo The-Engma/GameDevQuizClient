@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://d12cs8ndww20m"]
+
+[ext_resource type="Script" path="res://01.setting-up-a-server/MainMenu.gd" id="1_ktmyn"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ktmyn")
+server_scene = "res://01.setting-up-a-server/Server.tscn"
+client_scene = "res://01.setting-up-a-server/Client.tscn"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 633.0
+offset_top = 308.0
+offset_right = 762.0
+offset_bottom = 331.0
+text = "Select Runnable:"
+
+[node name="ClientButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 405.0
+offset_right = 631.0
+offset_bottom = 436.0
+text = "Start Client"
+
+[node name="ServerButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 788.0
+offset_top = 407.0
+offset_right = 888.0
+offset_bottom = 438.0
+text = "Start Server"
+
+[connection signal="pressed" from="ClientButton" to="." method="_on_client_button_pressed"]
+[connection signal="pressed" from="ServerButton" to="." method="_on_server_button_pressed"]

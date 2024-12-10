@@ -1,0 +1,134 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8kml2j3akt0"]
+
+[ext_resource type="Script" path="res://05.online-quiz/QuizPanel.gd" id="1_45uqs"]
+[ext_resource type="Texture2D" uid="uid://cqh5hrdkoonp4" path="res://assets/pexels-olenkabohovyk-5686476.jpg" id="2_f723f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nrw1i"]
+font_color = Color(0, 0.521569, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5n8j5"]
+font_size = 41
+font_color = Color(2.02149e-06, 0.786419, 0.508291, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_lik6u"]
+font_size = 38
+font_color = Color(0.999773, 0.274379, 0.213625, 1)
+
+[node name="QuizPanel" type="ColorRect"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -249.0
+offset_top = -233.0
+offset_right = 251.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(250, 125)
+size_flags_vertical = 4
+color = Color(0, 0, 0, 1)
+script = ExtResource("1_45uqs")
+
+[node name="Pexels-olenkabohovyk-5686476" type="Sprite2D" parent="."]
+position = Vector2(249, 233)
+scale = Vector2(0.32, 0.12)
+texture = ExtResource("2_f723f")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -125.0
+offset_right = 250.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.702725, 0.831836, 0.980472, 1)
+
+[node name="QuestionLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 21.0
+offset_top = 22.0
+offset_right = -21.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Waiting for players..."
+label_settings = SubResource("LabelSettings_nrw1i")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Answers" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AnswerButton" type="Button" parent="Answers"]
+layout_mode = 0
+offset_top = 274.0
+offset_right = 498.0
+offset_bottom = 311.0
+theme_override_colors/font_color = Color(0.805362, 1, 0.881128, 1)
+text = "Answer here"
+
+[node name="AnswerButton2" type="Button" parent="Answers"]
+layout_mode = 0
+offset_top = 329.0
+offset_right = 498.0
+offset_bottom = 366.0
+theme_override_colors/font_color = Color(1, 0.305578, 0.26742, 1)
+text = "Answer here"
+
+[node name="AnswerButton3" type="Button" parent="Answers"]
+layout_mode = 0
+offset_top = 384.0
+offset_right = 498.0
+offset_bottom = 421.0
+theme_override_colors/font_color = Color(0.803922, 1, 0.882353, 1)
+text = "Answer here"
+
+[node name="AnswerButton4" type="Button" parent="Answers"]
+layout_mode = 0
+offset_top = 441.0
+offset_right = 498.0
+offset_bottom = 478.0
+theme_override_colors/font_color = Color(1, 0.305882, 0.266667, 1)
+text = "Answer here"
+
+[node name="ScoreUI" type="Label" parent="."]
+layout_mode = 0
+offset_left = -390.0
+offset_top = -127.0
+offset_right = -350.0
+offset_bottom = -104.0
+text = "Score : "
+label_settings = SubResource("LabelSettings_5n8j5")
+
+[node name="ScoreVar" type="Label" parent="."]
+layout_mode = 0
+offset_left = -249.0
+offset_top = -122.0
+offset_right = -209.0
+offset_bottom = -69.0
+text = "0"
+label_settings = SubResource("LabelSettings_lik6u")
+
+[node name="DoubleOrLoose" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 84.0
+offset_top = 191.0
+offset_right = 417.0
+offset_bottom = 222.0
+theme_override_colors/font_color = Color(0.741176, 0, 0, 1)
+text = "Double or loose a point for next question?"

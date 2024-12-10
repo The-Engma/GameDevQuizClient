@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgjr5wuxuf4ev"]
+
+[ext_resource type="Script" path="res://05.online-quiz/QuizServer.gd" id="1_wjnk6"]
+[ext_resource type="Texture2D" uid="uid://b0032lvu5e60q" path="res://assets/pexels-brett-sayles-1708601.jpg" id="2_7i1wm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_phuqj"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wjnk6")
+
+[node name="Pexels-brett-sayles-1708601" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.229885, 0.193966)
+texture = ExtResource("2_7i1wm")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 26.0
+grow_horizontal = 2
+text = "I'm a server"
+label_settings = SubResource("LabelSettings_phuqj")
+horizontal_alignment = 1
+vertical_alignment = 1

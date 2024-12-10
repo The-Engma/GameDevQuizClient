@@ -1,0 +1,44 @@
+{
+	"question_01":
+		{
+			"text": "What is another name for Santa Clause?",
+			"alternatives": ["St Christopher", "St Pattrick", "St Francis", "Saint Nicholas"],
+			"correct_answer_index": 3
+		},
+	"question_02":
+		{
+			"text": "What color is Rudolph's nose?",
+			"alternatives": ["Red", "Green", "Yellow", "Purple"],
+			"correct_answer_index": 0
+		},
+	"question_03":
+		{
+			"text": "What did the Grinch steal?",
+			"alternatives": ["Presents", "Christmas", "Joy", "Love"],
+			"correct_answer_index": 1
+		},
+	"question_04":
+		{
+			"text": "Where is Santa coming to?",
+			"alternatives": ["The Village", "The North Pole", "City", "Town"],
+			"correct_answer_index": 3
+		},
+	"question_05":
+		{
+			"text": "Where does Santa live?",
+			"alternatives": ["The North Pole", "The South Pole", "The East Pole", "The West Pole"],
+			"correct_answer_index": 0
+		},
+	"question_06":
+		{
+			"text": "What type of tree do people usualy put up at Christmas?",
+			"alternatives": ["Christmas", "Apple", "Evergreen", "Cherry"],
+			"correct_answer_index": 2
+		},
+	"question_07":
+		{
+			"text": "Who sang All I Want for Christmas is You?",
+			"alternatives": ["Taylor Swift", "Britney Spears", "Mariah Carey", "Elvis Presley"],
+			"correct_answer_index": 2
+		}
+}
